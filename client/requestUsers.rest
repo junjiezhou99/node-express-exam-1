@@ -2,7 +2,8 @@ POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-"username":"spyder@dominio.es", "password":"man"
+    "username":"spyder@dominio.es", 
+    "password":"man"
 }
 
 ####
@@ -10,14 +11,16 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-"username":"spyder@dominio.es", "password":"man"
+    "username":"spyder@dominio.es", 
+    "password":"man"
 }
 ####
 POST http://localhost:3000/users/register 
 Content-Type: application/json
 
 {
-"username":"hawkeye@dominio.es", "password":"man"
+    "username":"hawkeye@dominio.es", 
+    "password":"man"
 }
 
 
@@ -26,7 +29,8 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-"username":"batman@dominio.es", "password":"man"
+    "username":"batman@dominio.es", 
+    "password":"man"
 }
 
 ####
@@ -34,5 +38,18 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-"username":"peter@dominio.es", "password":"pan"
+    "username":"peter@dominio.es", 
+    "password":"pan"
+}
+
+#### GetAllUsers
+POST http://localhost:3000/users
+
+#### Password error
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username":"peter@dominio.es", 
+    "password":"asdfg"
 }
